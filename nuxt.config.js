@@ -19,7 +19,8 @@ module.exports = {
   loading: { color: '#3B8070' },
   css: [
     // '~assets/css/main.css',
-    'element-ui/lib/theme-default/index.css'
+    'element-ui/lib/theme-default/index.css',
+    { src: '~assets/scss/vars.scss', lang: 'scss' }
   ],
   generate: {
     minify: {
@@ -31,6 +32,7 @@ module.exports = {
   */
   build: {
     // analyze: true,
+    
     vendor: ['axios', 'element-ui'],
     // vue: {
     //   preserveWhitespace: false
@@ -52,10 +54,10 @@ module.exports = {
           loader: 'eslint-loader',
           exclude: /(node_modules)/
         })
-        config.module.rules.push({
-        test: /\.scss$/,
-        loader: 'vue-style-loader!css-loader!sass-loader'
-      })
+      //   config.module.rules.push({
+      //   test: /\.scss$/,
+      //   loader: 'vue-style-loader!css-loader!sass-loader'
+      // })
       }
     }
   },

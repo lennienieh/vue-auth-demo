@@ -38,16 +38,16 @@ export default {
             }
         },
         changeType() {
-            if (!this.isFolder) {
-                Vue.set(this.model, 'children', [])
-                this.addChild()
-                this.open = true
-            }
+            // if (!this.isFolder) {
+            //     Vue.set(this.model, 'children', [])
+            //     this.addChild()
+            //     this.open = true
+            // }
         },
         addChild() {
-            this.model.children.push({
-                name: 'new stuff'
-            })
+            // this.model.children.push({
+            //     name: 'new stuff'
+            // })
         }
     }
 }
