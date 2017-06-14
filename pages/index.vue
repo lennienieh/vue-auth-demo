@@ -52,6 +52,7 @@ export default {
         if (valid) {
           // _this.$router.replace('/table');
           this.logining = true;
+           this.$router.push({ path: '/main/auth' });
           // NProgress.start();
           // var loginParams = { username: this.ruleForm2.account, password: this.ruleForm2.checkPass };
           // requestLogin(loginParams).then(data => {
