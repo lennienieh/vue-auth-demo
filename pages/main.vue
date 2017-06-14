@@ -1,7 +1,6 @@
 <template>
   <div>
     <div>main</div>
-    <!--<Logo/>-->
     <div>
       <ul>
         <Tree class="item" :model="treeData">
@@ -19,7 +18,6 @@ import Tree from '~components/Tree.vue'
 
 export default {
   components: {
-    Logo,
     Tree
   },
   data() {
